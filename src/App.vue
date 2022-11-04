@@ -1,17 +1,17 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Editor></Editor>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Editor from "@/components/Editor.vue";
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+  components: { Editor },
+  setup() {
+    return {};
+  },
+};
 </script>
 
 <style>
@@ -21,6 +21,11 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+body {
+  top: 0;
+  left: 0;
+  margin: 0;
 }
 </style>
